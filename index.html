@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HP-Compatible Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Configure MathJax before loading it -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\', '\']],
+        displayMath: [['$$', '$$'], ['\', '\']]
+      }
+    };
+  </script>
+
+  <!-- Load MathJax from CDN -->
+  <script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      max-width: 700px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      font-family: "Georgia", serif;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px #ccc;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .math-section {
+      font-size: 1.3rem;
+      color: #1a1a1a;
+    }
+
+    .math-section p {
+      margin: 12px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Small but Mighty: HP-Compatible Calculator</div>
+
+    <div class="description">
+      This small but powerful calculator was designed to be software compatible with the HP-41C.
+      It lacked the HP-41C's expandability but it offered a two-line dot matrix screen with customizable menus,
+      greater speed, smaller size, and a lower price as compensation.
+    </div>
+
+    <div class="math-section">
+      <p>Integral notation: $ \int_0^\infty e^{-x} \, dx = 1 $</p>
+      <p>Pi constant: $ \pi \approx 3.14159 $</p>
+      <p>Product notation: $ \prod_{n=1}^\infty \left(1 + \frac{1}{n^2} \right) $</p>
+    </div>
+  </div>
+</body>
+</html>
