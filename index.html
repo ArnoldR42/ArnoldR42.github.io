@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HP-Compatible Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ✅ MathJax from CDN -->
+  <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 700px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2.3em;
+      font-family: Georgia, serif;
+      color: #1e293b;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 1.1em;
+      color: #333;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .math-section {
+      font-size: 1.2em;
+      color: #111;
+    }
+
+    .math-section script {
+      display: block;
+      margin: 1em auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Small but Mighty: HP-Compatible Calculator</div>
+
+    <div class="description">
+      This small but powerful calculator was designed to be software compatible with the HP-41C.
+      It lacked the HP-41C's expandability but it offered a two-line dot matrix screen with customizable menus,
+      greater speed, smaller size, and a lower price as compensation.
+    </div>
+
+    <div class="math-section">
+      <div>Integral:</div>
+      <script type="math/tex; mode=display">
+        \int_0^\infty e^{-x} \, dx = 1
+      </script>
+
+      <div>Pi constant:</div>
+      <script type="math/tex; mode=display">
+        \pi \approx 3.14159
+      </script>
+
+      <div>Product notation:</div>
+      <script type="math/tex; mode=display">
+        \prod_{n=1}^{\infty} \left(1 + \frac{1}{n^2} \right)
+      </script>
+    </div>
+  </div>
+</body>
+</html>
