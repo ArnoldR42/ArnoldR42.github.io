@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HP-42S RPN Scientific Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Elegant Web Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+
+  <style>
+    /* Global Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fdfdfb;
+      color: #1a1a1a;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 20px;
+      max-width: 860px;
+      width: 100%;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+      padding: 50px 40px;
+    }
+
+    .title {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #1e3a5f;
+      margin-bottom: 30px;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+
+    img {
+      display: block;
+      width: 280px;
+      margin: 0 auto 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .section {
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+      line-height: 1.75;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #1e293b;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 6px;
+    }
+
+    ul {
+      padding-left: 1.6em;
+      margin-top: 10px;
+    }
+
+    pre {
+      background: #f6f8fa;
+      border-left: 4px solid #1e3a8a;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.95rem;
+      color: #111827;
+      overflow-x: auto;
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-link {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #2563eb;
+      border: 2px solid #2563eb;
+      padding: 10px 24px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 20px;
+      transition: all 0.25s ease;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      background-color: #2563eb;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      .title {
+        font-size: 2.1rem;
+      }
+
+      img {
+        width: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">HP-42S RPN Scientific Calculator</div>
+
+    <img src="HP42S.jpg" alt="HP 42S Calculator" />
+
+    <div class="section">
+      <p>The <strong>HP-42S</strong> is a programmable scientific calculator introduced by Hewlett-Packard in 1988. It was designed as a compact, powerful successor to the HP-41 series, offering software compatibility while lacking expandability and I/O features. It was marketed more as a modern replacement to the HP-15C.</p>
+    </div>
+
+    <div class="section">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Reverse Polish Notation (RPN) entry</li>
+        <li>2-line LCD dot-matrix display (22 characters, 131×16 pixels)</li>
+        <li>Over 350 built-in functions including matrix operations, complex numbers, equation solving, and numerical integration</li>
+        <li>Graphic output via programmable plotting</li>
+        <li>64KB ROM, 7200 program steps, IR output to HP 82240A printer</li>
+        <li>Programmability via FOCAL-like keystroke programming</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Programming Example: Area of a Circle</h2>
+      <pre>
+LBL "AREA"
+INPUT R
+X↑2
+PI
+×
+RTN
+      </pre>
+      <p>This program prompts for radius R and returns the area using the formula π·R².</p>
+    </div>
+
+    <div class="section">
+      <h2>Equation Solving Example</h2>
+      <p>To solve Fahrenheit to Celsius conversion using the solver:</p>
+      <pre>
+LBL "TEMP"
+MVAR F
+MVAR C
+RCL F
+9
+5
+÷
+RCL C
+×
+-
+32
+-
+RTN
+      </pre>
+    </div>
+
+    <div class="section">
+      <h2>Emulators & Successors</h2>
+      <p>Popular emulators include <strong>Free42</strong> and <strong>Emu42</strong> (for Android and desktop). The <strong>WP-34S</strong> project is a modern RPN scientific calculator based on the HP 30b hardware with extended functionality.</p>
+    </div>
+
+    <div class="section">
+      <h2>Reference Resources</h2>
+      <ul>
+        <li><a href="https://literature.hpcalc.org/all#model:42S" target="_blank">Official Manuals and Books</a></li>
+        <li><a href="http://www.hpmuseum.org/hp42s.htm" target="_blank">Museum of HP Calculators</a></li>
+        <li><a href="https://thomasokken.com/free42/" target="_blank">Free42 Simulator</a></li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="nav-link">Back to Page 1</a>
+  </div>
+</body>
+</html>
