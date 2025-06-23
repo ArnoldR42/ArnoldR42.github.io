@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HP-42S RPN Scientific Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .title {
+      font-size: 2.2rem;
+      font-family: Georgia, serif;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .section {
+      margin: 25px 0;
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #333;
+    }
+
+    .section h2 {
+      color: #1a1a1a;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    .nav-link {
+      margin-top: 30px;
+      font-size: 1.1rem;
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #2c3e50;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-link:hover {
+      background-color: #2c3e50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">HP-42S RPN Scientific Calculator</div>
+
+    <img src="HP42S.png" alt="HP 42S Calculator">
+
+    <div class="section">
+      <p>The <strong>HP-42S</strong> is a programmable scientific calculator introduced by Hewlett-Packard in 1988. It was designed as a compact, powerful successor to the HP-41 series, offering software compatibility while lacking expandability and I/O features. It was marketed more as a modern replacement to the HP-15C.</p>
+    </div>
+
+    <div class="section">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Reverse Polish Notation (RPN) entry</li>
+        <li>2-line LCD dot-matrix display (22 characters, 131×16 pixels)</li>
+        <li>Over 350 built-in functions including matrix operations, complex numbers, equation solving, and numerical integration</li>
+        <li>Graphic output via programmable plotting</li>
+        <li>64KB ROM, 7200 program steps, IR output to HP 82240A printer</li>
+        <li>Programmability via FOCAL-like keystroke programming</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Programming Example: Area of a Circle</h2>
+      <pre>
+LBL "AREA"
+INPUT R
+X↑2
+PI
+×
+RTN
+      </pre>
+      <p>This simple program prompts for radius R and returns the area using the formula π·R².</p>
+    </div>
+
+    <div class="section">
+      <h2>Equation Solving Example</h2>
+      <p>To solve Fahrenheit to Celsius conversion using the solver:</p>
+      <pre>
+LBL "TEMP"
+MVAR F
+MVAR C
+RCL F
+9
+5
+÷
+RCL C
+×
+-
+32
+-
+RTN
+      </pre>
+    </div>
+
+    <div class="section">
+      <h2>Emulators & Successors</h2>
+      <p>Popular emulators include <strong>Free42</strong> and <strong>Emu42</strong> (for Android and desktop). The <strong>WP-34S</strong> project is a modern RPN scientific calculator based on the HP 30b hardware with extended functionality.</p>
+    </div>
+
+    <div class="section">
+      <h2>Reference Resources</h2>
+      <ul>
+        <li><a href="https://literature.hpcalc.org/all#model:42S" target="_blank">Official Manuals and Books</a></li>
+        <li><a href="http://www.hpmuseum.org/hp42s.htm" target="_blank">Museum of HP Calculators</a></li>
+        <li><a href="https://thomasokken.com/free42/" target="_blank">Free42 Simulator</a></li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="nav-link">Back to Page 1</a>
+  </div>
+</body>
+</html>
