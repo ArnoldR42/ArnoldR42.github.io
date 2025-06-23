@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HP-42S Scientific Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Manrope:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Manrope', sans-serif;
+      background: linear-gradient(135deg, #e8f0ff, #d9e4ec, #f4efff);
+      background-size: 400% 400%;
+      animation: gradientFlow 20s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 50px 20px;
+    }
+
+    @keyframes gradientFlow {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .card {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+      padding: 50px;
+      max-width: 840px;
+      width: 100%;
+    }
+
+    .title {
+      font-size: 2.6rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      text-align: center;
+      color: #1a2e4f;
+      margin-bottom: 30px;
+      letter-spacing: -0.5px;
+    }
+
+    .image-container {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .image-container img {
+      width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .section {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #202c3b;
+      margin-bottom: 35px;
+    }
+
+    .section h2 {
+      font-size: 1.4rem;
+      color: #18344a;
+      margin-bottom: 12px;
+      border-left: 5px solid #4b79ff;
+      padding-left: 12px;
+    }
+
+    ul {
+      padding-left: 1.5em;
+      margin-top: 12px;
+    }
+
+    pre {
+      background: #f4f6fa;
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.95rem;
+      overflow-x: auto;
+      color: #111;
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.04);
+    }
+
+    a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page-link {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #2563eb;
+      border: 2px solid #2563eb;
+      padding: 10px 24px;
+      border-radius: 10px;
+      margin-top: 20px;
+      transition: all 0.25s ease;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .page-link:hover {
+      background-color: #2563eb;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 30px 20px;
+      }
+
+      .title {
+        font-size: 2.1rem;
+      }
+
+      .image-container img {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">HP-42S Scientific Calculator</div>
+
+    <div class="image-container">
+      <img src="HP42S.jpg" alt="HP-42S Calculator">
+    </div>
+
+    <div class="section">
+      <p>The <strong>HP-42S</strong> is a powerful programmable scientific calculator introduced by Hewlett-Packard in 1988. A spiritual successor to the HP-41C series, it retained software compatibility but traded expandability for a sleek, compact form and a two-line dot-matrix display.</p>
+    </div>
+
+    <div class="section">
+      <h2>Highlights & Capabilities</h2>
+      <ul>
+        <li>Reverse Polish Notation (RPN) for efficient data entry</li>
+        <li>Two-line 131×16 pixel LCD with dot-matrix graphics</li>
+        <li>Support for matrices, complex numbers, equations, and integrals</li>
+        <li>7200 program steps with structured memory</li>
+        <li>Infrared output to HP 82240A/B printers</li>
+        <li>Elegant FOCAL-style keystroke programming</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Program Example: Area of a Circle</h2>
+      <pre>
+LBL "AREA"
+INPUT R
+X↑2
+PI
+×
+RTN
+      </pre>
+      <p>This snippet prompts for a radius and returns the area using π·r².</p>
+    </div>
+
+    <div class="section">
+      <h2>Legacy & Modern Access</h2>
+      <p>Though discontinued, the HP-42S has lived on via emulators like <a href="https://thomasokken.com/free42/" target="_blank">Free42</a> and hardware recreations like the DM42. Its precision and elegant design make it a favorite among engineers and calculator enthusiasts.</p>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="HP42S.html" class="page-link">Page 2</a>
+    </div>
+  </div>
+</body>
+</html>
